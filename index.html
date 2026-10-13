@@ -3,84 +3,68 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sail &amp; Raid — Gizlilik Politikası / Privacy Policy</title>
+<title>Sail &amp; Raid — 3v3 Deniz Savaşları</title>
+<meta name="description" content="Sail & Raid: hızlı, taktiksel, 3 dakikalık 3v3 korsan savaşları. Gemini seç, bordanı ateşle, rakip filoyu batır.">
 <style>
-  :root { --bg:#0e2433; --card:#14324a; --text:#f3e7ce; --muted:#b9c7d2; --accent:#f1c462; }
-  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
-  h1 { color:var(--accent); font-size:28px; margin:0 0 4px; }
-  h2 { color:var(--accent); font-size:20px; margin:32px 0 8px; }
-  h3 { font-size:17px; margin:20px 0 6px; }
-  p, li { color:var(--text); } .muted { color:var(--muted); font-size:14px; }
-  section { background:var(--card); border-radius:12px; padding:20px 22px; margin:20px 0; }
-  a { color:var(--accent); } nav a { margin-right:16px; }
-  table { width:100%; border-collapse:collapse; font-size:14px; } td, th { border-bottom:1px solid #24506f; padding:8px 6px; text-align:left; vertical-align:top; }
+  :root { --bg:#0e0d0f; --panel:#18161a; --line:#2b272e; --text:#f1ece4; --muted:#a69f96; --gold:#d9b25b; --sea:#2bb3b8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:radial-gradient(1200px 600px at 50% -10%, #1b3b44 0%, var(--bg) 60%); color:var(--text);
+         font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  a { color:var(--gold); }
+  header { display:flex; justify-content:space-between; align-items:center; max-width:1100px; margin:0 auto; padding:20px 16px; }
+  header .brand { font-weight:800; letter-spacing:.5px; color:var(--text); text-decoration:none; }
+  header nav a { color:var(--muted); text-decoration:none; margin-left:20px; font-size:15px; }
+  .hero { text-align:center; padding:72px 16px 40px; max-width:900px; margin:0 auto; }
+  .hero h1 { font-size:clamp(48px, 10vw, 104px); line-height:1; margin:0; color:var(--gold); font-weight:900; letter-spacing:-1px; }
+  .hero p { font-size:clamp(18px, 2.4vw, 22px); color:var(--muted); margin:20px auto 32px; max-width:620px; }
+  .badges { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+  .badge { border:1px solid var(--line); background:var(--panel); border-radius:999px; padding:12px 22px; color:var(--text); font-weight:600; }
+  .badge small { display:block; color:var(--muted); font-weight:400; font-size:12px; }
+  .ships { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:18px; max-width:1100px; margin:40px auto; padding:0 16px; }
+  .ship { background:var(--panel); border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .ship img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; background:#9aa3ab; }
+  .ship div { padding:16px 18px 20px; }
+  .ship h3 { margin:0; font-size:22px; } .ship .role { color:var(--sea); font-weight:700; font-size:13px; letter-spacing:1px; }
+  .ship p { color:var(--muted); margin:8px 0 0; font-size:15px; }
+  .features { max-width:1100px; margin:20px auto 60px; padding:0 16px; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:18px; }
+  .feat { border-top:2px solid var(--gold); padding-top:14px; } .feat h4 { margin:0 0 6px; } .feat p { margin:0; color:var(--muted); font-size:15px; }
+  footer { border-top:1px solid var(--line); color:var(--muted); font-size:14px; text-align:center; padding:28px 16px 40px; }
+  footer a { margin:0 10px; }
 </style>
 </head>
-<body><main>
-<h1>Sail &amp; Raid</h1>
-<p class="muted">Son güncelleme / Last updated: 13 Ekim 2026 / October 13, 2026</p>
-<nav><a href="#tr">Türkçe</a><a href="#en">English</a></nav>
+<body>
+<header>
+  <a class="brand" href="https://www.wolkstudio.com">wolk interactive</a>
+  <nav><a href="#gemiler">Gemiler</a><a href="gizlilik.html">Gizlilik</a></nav>
+</header>
 
-<section id="tr">
-<h2>Gizlilik Politikası</h2>
-<p>Bu politika, Wolk Interactive ("biz") tarafından geliştirilen <b>Sail &amp; Raid</b> mobil oyununun ("Oyun") hangi verileri neden topladığını ve nasıl koruduğunu açıklar.</p>
-
-<h3>1. Topladığımız veriler</h3>
-<table>
-<tr><th>Veri</th><th>Neden</th></tr>
-<tr><td><b>Oyun hesabı:</b> rastgele oluşturulan hesap kimliği ve gizli anahtar (sunucuda yalnızca karma/hash olarak saklanır), seçtiğin kaptan adı</td><td>İlerlemeni (gemiler, seviye, kupa, altın, elmas) saklamak</td></tr>
-<tr><td><b>Oyun verileri:</b> maç sonuçları, istatistikler, son maç geçmişi, görev ve Kupa Yolu ilerlemesi, satın alma ve ödül kayıtları</td><td>Oyunu oynatmak, ödülleri doğru vermek, hile ve iade incelemesi</td></tr>
-<tr><td><b>Bağlantı bilgisi:</b> IP adresi, ping</td><td>Seni sunucuya bağlamak, bölge seçimi, kötüye kullanımı önlemek (sunucu kayıtlarında kısa süre tutulur)</td></tr>
-<tr><td><b>Reklam kimliği</b> (yalnızca ödüllü reklam izlersen; reklam sağlayıcımız Unity LevelPlay tarafından)</td><td>Reklam göstermek ve ödülü doğrulamak</td></tr>
-<tr><td><b>Çökme ve hata raporları</b> (cihaz modeli, işletim sistemi sürümü, hata kaydı)</td><td>Hataları bulup düzeltmek</td></tr>
-<tr><td><b>Google / Apple hesabı bağlantısı</b> (isteğe bağlı: hesap kimliği ve e-posta)</td><td>Hesabını kaydetmek ve başka cihazda açmak</td></tr>
-</table>
-<p>Adın, telefon numaran, konumun, rehberin, kameran veya mikrofonun <b>toplanmaz</b>. Ödeme bilgilerin Google Play / App Store tarafından işlenir; biz kart bilgisi görmeyiz.</p>
-
-<h3>2. Paylaşım</h3>
-<p>Verilerini satmayız. Yalnızca oyunu çalıştırmak için gereken hizmet sağlayıcılarla paylaşılır: sunucu barındırma (Heroku / Microsoft Azure), reklam (Unity LevelPlay ve aracı reklam ağları), çökme raporlama (Sentry), uygulama mağazaları (Google, Apple). Diğer oyuncular yalnızca kaptan adını, gemi seviyeni ve maç içi istatistiklerini görür.</p>
-
-<h3>3. Reklamlar</h3>
-<p>Oyunda reklam yalnızca sen istediğinde (ödüllü reklam) gösterilir. İlk açılışta kişiselleştirilmiş reklam için onayın istenir; reddedersen kişiselleştirilmemiş reklam gösterilir. iOS'ta izin vermediğin sürece reklam kimliğine erişilmez.</p>
-
-<h3>4. Saklama ve silme</h3>
-<p>Verilerin hesabın açık kaldığı sürece saklanır. Oyunda <b>Ayarlar → Hesap → Hesabımı sil</b> ile hesabını ve oyun verilerini kalıcı olarak silebilirsin; yasal zorunluluk olan satın alma kayıtları anonim olarak ve yalnızca gereken süre boyunca tutulur. Silme talebini e-postayla da iletebilirsin.</p>
-
-<h3>5. Çocuklar</h3>
-<p>Oyun 13 yaşın altındaki çocuklara yönelik değildir ve bu yaştaki çocuklardan bilerek veri toplamayız.</p>
-
-<h3>6. Hakların (KVKK / GDPR)</h3>
-<p>Verilerine erişme, düzeltme, silme ve itiraz etme hakkın vardır. Talepler için: <b><a href="mailto:destek@wolkstudio.com">destek@wolkstudio.com</a></b></p>
-
-<h3>7. Değişiklikler</h3>
-<p>Bu politikayı güncellersek bu sayfadaki tarihi değiştiririz; önemli değişiklikleri oyun içinde duyururuz.</p>
+<section class="hero">
+  <h1>Sail &amp; Raid</h1>
+  <p>Hızlı, taktiksel, 3 dakikalık 3v3 korsan savaşları. Gemini seç, bordanı ateşle, rakip filoyu batır.</p>
+  <div class="badges">
+    <span class="badge">Google Play<small>Yakında</small></span>
+    <span class="badge">App Store<small>Yakında</small></span>
+  </div>
 </section>
 
-<section id="en">
-<h2>Privacy Policy</h2>
-<p>This policy explains what data <b>Sail &amp; Raid</b> ("the Game"), developed by Wolk Interactive ("we"), collects, why, and how it is protected.</p>
-<h3>1. Data we collect</h3>
-<ul>
-<li><b>Game account:</b> a randomly generated account ID and secret key (stored on our server only as a hash) and the captain name you choose — to save your progress.</li>
-<li><b>Gameplay data:</b> match results, statistics, recent match history, quests and Trophy Road progress, purchase and reward records — to run the game, grant rewards correctly, and investigate cheating and refunds.</li>
-<li><b>Connection data:</b> IP address and ping — to connect you to a server and prevent abuse (kept briefly in server logs).</li>
-<li><b>Advertising ID</b> (only if you watch a rewarded ad; via Unity LevelPlay) — to show ads and verify rewards.</li>
-<li><b>Crash and error reports</b> (device model, OS version, error log) — to fix bugs.</li>
-<li><b>Google / Apple account link</b> (optional: account ID and email) — to save your account and restore it on another device.</li>
-</ul>
-<p>We do <b>not</b> collect your real name, phone number, location, contacts, camera or microphone. Payments are processed by Google Play / the App Store; we never see card details.</p>
-<h3>2. Sharing</h3>
-<p>We do not sell your data. It is shared only with service providers needed to run the Game: server hosting (Heroku / Microsoft Azure), advertising (Unity LevelPlay and mediated ad networks), crash reporting (Sentry), and the app stores (Google, Apple). Other players only see your captain name, ship level and in-match statistics.</p>
-<h3>3. Ads</h3>
-<p>Ads are shown only when you choose to watch one (rewarded ads). On first launch you are asked to consent to personalised ads; if you decline, non-personalised ads are shown. On iOS the advertising ID is not accessed unless you allow tracking.</p>
-<h3>4. Retention and deletion</h3>
-<p>Data is kept while your account exists. You can permanently delete your account and game data in <b>Settings → Account → Delete my account</b>; purchase records required by law are kept anonymised and only as long as required. You may also request deletion by email.</p>
-<h3>5. Children</h3>
-<p>The Game is not directed at children under 13, and we do not knowingly collect data from them.</p>
-<h3>6. Your rights (GDPR / KVKK)</h3>
-<p>You have the right to access, correct, delete and object to the processing of your data. Contact: <b><a href="mailto:destek@wolkstudio.com">destek@wolkstudio.com</a></b></p>
-<h3>7. Changes</h3>
-<p>If we update this policy we will change the date above and announce significant changes in the Game.</p>
+<section class="ships" id="gemiler">
+  <article class="ship"><img src="kirlangic.jpg" alt="Kırlangıç gemisi" loading="lazy">
+    <div><span class="role">AVCI</span><h3>Kırlangıç</h3><p>Hızlı ve kırılgan. Rüzgâr Hamlesi ile dal, vur, kaç.</p></div></article>
+  <article class="ship"><img src="korsan.jpg" alt="Korsan gemisi" loading="lazy">
+    <div><span class="role">DENGELİ</span><h3>Korsan</h3><p>Her duruma uyan, çift bordalı klasik akıncı.</p></div></article>
+  <article class="ship"><img src="kale.jpg" alt="Kale gemisi" loading="lazy">
+    <div><span class="role">TANK</span><h3>Kale</h3><p>Demir zırhlı, koçbaşlı yüzen kale. Yavaş ama durdurulamaz.</p></div></article>
 </section>
-</main></body></html>
+
+<section class="features">
+  <div class="feat"><h4>3v3 takım savaşı</h4><p>Kısa, yoğun maçlar; takımınla koridorları tut.</p></div>
+  <div class="feat"><h4>Kupa Yolu</h4><p>Kazandıkça ilerle, gemileri ve kaplamaları aç.</p></div>
+  <div class="feat"><h4>Adil eşleştirme</h4><p>Gemi seviyesi yakın oyuncularla eşleşirsin.</p></div>
+  <div class="feat"><h4>Şeffaf mağaza</h4><p>Kutu ya da şans çarkı yok; ne aldığın her zaman belli.</p></div>
+</section>
+
+<footer>
+  © 2026 Wolk Interactive · <a href="gizlilik.html">Gizlilik Politikası</a> · <a href="https://www.wolkstudio.com">wolkstudio.com</a>
+</footer>
+</body>
+</html>
